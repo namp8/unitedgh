@@ -1,0 +1,105 @@
+.trunk,
+.trunk div {
+  background: #199649;
+  will-change: transform;
+  width: 6vmin;
+  height: 0.6vmin;
+  position: fixed;
+  margin-left: -0.6vmin;
+  -webkit-animation-name: rot;
+          animation-name: rot;
+  -webkit-animation-duration: 2.26562s;
+          animation-duration: 2.26562s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: 0.3vmin 0.3vmin;
+          transform-origin: 0.3vmin 0.3vmin;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.trunk.trunk,
+.trunk div.trunk {
+  bottom: 0;
+  left: 95%;
+  -webkit-animation-name: rot-root;
+          animation-name: rot-root;
+  -webkit-animation-duration: 2.46428s;
+          animation-duration: 2.46428s;
+}
+.trunk >div,
+.trunk div >div {
+  top: 0;
+  left: 6vmin;
+  -webkit-animation-duration: calc((inherit / 2));
+          animation-duration: calc((inherit / 2));
+}
+.trunk >div:nth-child(2),
+.trunk div >div:nth-child(2) {
+  -webkit-animation-name: rot-inv;
+          animation-name: rot-inv;
+  -webkit-animation-duration: 1.777351213486541s;
+          animation-duration: 1.777351213486541s;
+}
+@-webkit-keyframes rot {
+  from {
+    -webkit-transform: rotate(15deg) scale(0.72);
+            transform: rotate(15deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(45deg) scale(0.72);
+            transform: rotate(45deg) scale(0.72);
+  }
+}
+@keyframes rot {
+  from {
+    -webkit-transform: rotate(15deg) scale(0.72);
+            transform: rotate(15deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(45deg) scale(0.72);
+            transform: rotate(45deg) scale(0.72);
+  }
+}
+@-webkit-keyframes rot-inv {
+  from {
+    -webkit-transform: rotate(-45deg) scale(0.72);
+            transform: rotate(-45deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(-15deg) scale(0.72);
+            transform: rotate(-15deg) scale(0.72);
+  }
+}
+@keyframes rot-inv {
+  from {
+    -webkit-transform: rotate(-45deg) scale(0.72);
+            transform: rotate(-45deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(-15deg) scale(0.72);
+            transform: rotate(-15deg) scale(0.72);
+  }
+}
+@-webkit-keyframes rot-root {
+  from {
+    -webkit-transform: rotate(-95deg);
+            transform: rotate(-95deg);
+  }
+  to {
+    -webkit-transform: rotate(-85deg);
+            transform: rotate(-85deg);
+  }
+}
+@keyframes rot-root {
+  from {
+    -webkit-transform: rotate(-95deg);
+            transform: rotate(-95deg);
+  }
+  to {
+    -webkit-transform: rotate(-85deg);
+            transform: rotate(-85deg);
+  }
+}
+
